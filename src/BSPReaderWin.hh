@@ -11,9 +11,10 @@ public:
 	~BSPReaderWindow();
 	
 public slots:
-	void close();
 	void open(QFileInfo file);
-	void refresh_bsp_info();
+	void save(QString file);
+	void close();
+	void init_bsp_info();
 	
 private:
 	struct PrivateData;
